@@ -1,0 +1,8 @@
+<ul>
+  <% @brands.each do |brand| %>
+  <li><%= brand.name %>, <a href="brands/<%=brand.id%>/edit">Edit brand</a></li>
+
+  <% end %>
+</ul>
+
+<a href="/brands/new">Add a brand</a>
